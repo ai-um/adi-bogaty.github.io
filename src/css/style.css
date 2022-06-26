@@ -1,0 +1,552 @@
+/* ТОЛЬКО НА 67% выглядит как надо */
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+header {
+	background: #344051;
+}
+nav {
+	margin: 0 auto;
+	max-width: 1115px;
+	height: 60px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	color: #fff;
+	font-size: 23.33px;
+	line-height: 60px;
+	/*padding-left: 388px;*/
+	float: left;
+}
+
+.menu {
+	max-width: 680px;
+	/*float: left;
+	padding-left: 432px;*/
+}
+
+.menu li {
+	float: left;
+	line-height: 60px;
+	color: #fff;
+	margin-right: 40px;
+	font-size: 16.67px;
+	text-transform: uppercase;
+}
+
+.main {
+	width: 100%;
+	height: calc(100% - 60px);
+	background: url("../img/boy.png") 90% 100%/auto 85% no-repeat, url(../img/bg.jpg) center/cover no-repeat;
+	/*padding: 0 auto;*/
+}
+
+.title-container {
+	max-width: 1115px;
+	float: left;
+	margin: 0 auto;
+	margin-top: calc(20%);
+	margin-left: calc(20%);
+	color: #2c384a;
+	text-align: center;
+}
+
+.title-container h1 {
+	font-size: 60px;
+	font-weight: bold;
+}
+
+.title-container h4 {
+	margin-top: 40px;
+	font-size: 22px;
+	color: #79818d;
+}
+
+.title-container input {
+	height: 40px;
+	text-align: center;
+	border: 2px solid #6d7682;
+	background: none;
+	border-radius: 5px;
+	color: #6d7682;
+	font-size: 13px;
+	padding: 0px 16px;
+	margin: 58px 14px 0 14px;
+}
+
+/*_______________________________________*/
+h2 {
+	font-family: "Franklin Gothic Medium", "Arial", sans-serif;
+	color: #263244;
+	text-transform: uppercase;
+	font-size: 33.33px;
+	letter-spacing: calc(-60em / 1000); /* ! */
+	padding: 115px 0 31px;
+}
+.h2-line {
+	margin:0 auto 60px;
+	width: 70px;
+	height: 4px;
+	background-color: #d17700;
+}
+
+.section-container {
+	width: 1170px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.title-container p {
+	font-family: "Calibri", sans-serif;
+	letter-spacing: calc(-60em / 1000); /* ! */
+	font-size: 17.67px;
+}
+
+.about img {
+	margin-bottom: 22px;
+}
+
+.about p {
+	width:740px;
+	margin: 0 auto;
+	text-align: left;
+	text-indent: 0;
+}
+
+.about input[type="submit"] {
+	font-family: "Franklin Gothic Medium", "Arial", sans-serif;
+	letter-spacing: calc(-60em / 1000); /* ! */
+	font-size: 16.67px;
+	color: #6f707e;
+	text-align: center;
+	
+	height: 40px;
+	border: 2px solid #6f707e;
+	border-radius: 6px;
+	
+	background: url("../img/about/resume_dwnl_icon.png") 15px center scroll no-repeat;
+	
+	margin-top: 34px;
+	margin-bottom: 98px;
+	padding: 0px 15px 0px 35px;
+}
+
+
+.abilities {
+	background: url("../img/abilities/abilities_bg.jpg") scroll no-repeat;
+	background-size: cover;
+	padding-bottom: 92px;
+}
+
+.skills {
+	max-width: 1095px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.skill-item {
+	width: 214px;
+	text-align: center;
+}
+.skill-item-logo {
+	width: 55px;
+	height: 55px;
+	margin: 0 auto 35px auto;
+}
+
+.skill-item-logo-web-design {
+	background: url("../img/abilities/laptop.png") center center scroll no-repeat;
+}
+.skill-item-logo-development {
+	background: url("../img/abilities/tag_brackets.png") center center scroll no-repeat;
+}
+.skill-item-logo-seo {
+	background: url("../img/abilities/rocket.png") center center scroll no-repeat;
+}
+.skill-item-logo-marketing {
+	background: url("../img/abilities/grammaphone.png") center center scroll no-repeat;
+}
+
+.skill-item-title {
+	font-family: "Bahnschrift", "Arial", sans-serif;
+	letter-spacing: calc(-60em / 1000); /* ! */
+	font-size: 18.58px;
+	color: #cf7600;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+.cases {
+	padding-bottom: 86px;
+}
+
+.cases p.p-cases-descr {
+	font-family: "Calibri", "Arial", sans-serif;
+	letter-spacing: calc(-60em / 1000); /* ! */
+	font-size: 16.67px;
+	margin: 0 auto 42px auto;
+	text-align: center;
+}
+
+.cases img {
+	margin-bottom: 40px;
+	/*Надо что-то придумать с адаптивностью изображения.*/
+}
+
+.cases-flex-container {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1143px;
+	margin-bottom: 21px;
+}
+
+.cases-left-text {
+	display: inline-block;
+	max-width: 209px;
+}
+.cases-right-text {
+	display: inline-block;
+	max-width: 854px;
+}
+
+.cases-left-text h6,
+.cases-right-text-title {
+	font-family: "Franklin Gothic Medium", "Arial", sans-serif;
+	letter-spacing: calc(-60em / 1000); /* ! */
+	text-align-last: left;
+	font-size: 25px;
+	color: #384354;
+}
+.cases-left-text h6 {
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+.cases-left-text-h6-2 {
+	margin-top: 15px;
+}
+.cases-little-text,
+.cases-right-text p {
+	font-family: "Calibri", "Arial", sans-serif;
+	letter-spacing: calc(-60em / 1000); /* ! */
+	text-align-last: left;
+	font-size: 16.67px;
+	color: #384354;
+}
+.cases-right-text p {
+	font-size: 20.83px;
+}
+.cases input[type="submit"] {
+	font-family: "Franklin Gothic Medium", "Arial", sans-serif;
+	letter-spacing: calc(-60em / 1000); /* ! */
+	text-transform: uppercase;
+	font-size: 20.83px;
+	color: #fff;
+	float: left;
+
+	height: 45px;
+	border-radius: 5px;
+	background: #63b5ae;
+	
+	padding: 0px 44px 0px 44px;
+}
+
+.price h2 {
+	font-family: "Franklin Gothic Medium", "Arial", sans-serif;
+	letter-spacing: calc(-60em / 1000); /* ! */
+	font-size: 45.83px;
+	text-align: center;
+	margin-bottom: 55px;
+}
+.price h5 {
+	font-family: "Franklin Gothic Medium", "Arial", sans-serif;
+	letter-spacing: calc(-60em / 1000); /* ! */
+	text-transform: uppercase;
+	font-size: 29.17px;
+	color: #000;
+	float: left;
+	text-align: left;
+	margin-bottom: 23px;
+}
+.price select {
+	margin: 0 auto 50px auto;
+	width: 891px;
+	background-color: #eeeeee;
+	background: #eeeeee url("../img/arrow_dwn.png") no-repeat center right 30px;
+	color: #737373;
+	padding: 24px 31px 21px 24px;
+	
+	-webkit-appearance: none;
+}
+#sl-adaptivity {
+	margin-bottom: 37px;
+}
+
+.price-flex-container,
+.price-bottom-flex-container {
+	display: flex;
+	flex-direction: column;
+	width: 891px;
+	margin: 0 auto;
+}
+.price-flex-container h2, 
+.price-flex-container h5, 
+.price-flex-container select {
+	display: inline-block;
+}
+
+.price hr {
+	border-top: 2px solid #d1d1d1;
+	margin: 0 auto;
+	width: 891px;
+}
+
+.undertable {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 22px;
+}
+
+.undertable-inner-item-text,
+.undertable-inner-item-number {
+	font-family: "Franklin Gothic Medium", "Arial", sans-serif;
+	letter-spacing: calc(-60em / 1000); /* ! */
+	font-size: 20.83px;
+}
+.undertable-inner-item-number {
+	font-size: 29.17px;
+}
+
+.price {
+	padding-bottom: 156px;
+}
+
+.statistics {
+	background: url("../img/statistics/statistics_bg.jpg") scroll no-repeat;
+	background-size: cover;
+	padding-bottom: 102px;
+}
+
+.statistics-items {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1034px;
+	margin: 0 auto;
+}
+
+.statistics-items-item {
+	width: 214px;
+	text-align: center;
+}
+.statistics-items-item-logo {
+	width: 55px;
+	height: 55px;
+	margin: 0 auto 35px auto;
+}
+
+.statistics-items-item-logo.smile-logo {
+	background: url("../img/statistics/smile.png") center center scroll no-repeat;
+}
+.statistics-items-item-logo.tag-brackets-logo {
+	background: url("../img/statistics/code_brackets_orange.png") center center scroll no-repeat;
+}
+.statistics-items-item-logo.check-logo {
+	background: url("../img/statistics/check.png") center center scroll no-repeat;
+}
+.statistics-items-item-logo.champions-cup-logo {
+	background: url("../img/statistics/champions_cup.png") center center scroll no-repeat;
+}
+
+.statistics-items-item-title {
+	font-family: "Impact", "Arial", sans-serif;
+	font-size: 37.5px;
+	color: #323d4f;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+
+.statistics-items-item-text {
+	font-family: "Franklin Gothic Medium", "Arial", sans-serif;
+	letter-spacing: calc(-60em / 1000); /* ! */
+	font-size: 16.67px;
+	color: #323d4f;
+	text-transform: uppercase;
+}
+
+.feedback {
+	padding-bottom: 90px;
+}
+
+.feedback p {
+	margin: 0 auto;
+	max-width: 692px;
+	font-family: "Calibri", "Arial", sans-serif;
+	letter-spacing: calc(-60em / 1000); /* ! */
+	font-size: 16.67px;
+}
+
+.feedback img,
+.feedback p {
+	margin-bottom: 35px;
+}
+
+.three-dots {
+	margin-top: 13px;
+	font-family: "Times New Roman";
+	font-size: 95px;
+	line-height: 15px;
+	color: #cfd2d7;
+}
+.dot-selected {
+	color: #c96500;
+}
+
+.contacts {
+	background: url("../img/contacts/contacts_bg.jpg") scroll no-repeat;
+	background-size: cover;
+	padding-bottom: 68px;
+	color: #fff;
+}
+
+.contacts h2 {
+	color: #fff;
+}
+.contacts .h2-line {
+	margin-bottom: 32px;
+}
+.contacts p {
+	display: inline-block;
+	margin: 0 auto 50px;
+	font-family: "Calibri", "Arial", sans-serif;
+	letter-spacing: calc(-60em / 1000); /* ! */
+	text-align-last: left;
+	font-size: 16.67px;
+}
+
+.contacts-items {
+	display: flex;
+	justify-content: space-between;
+	max-width: 607px;
+	margin: 0 auto 40px;
+}
+.contacts-items-item {
+	width: 165px;
+	text-align: center;
+}
+.contacts-items-item-logo {
+	width: 40px;
+	height: 30px;
+	margin: 0 auto 17px auto;
+}
+
+.contacts-items-item-logo.contacts-items-item-logo-map {
+	background: url("../img/contacts/гео.png") center center scroll no-repeat;
+}
+.contacts-items-item-logo.contacts-items-item-logo-mail {
+	background: url("../img/contacts/конверт.png") center center scroll no-repeat;
+}
+.contacts-items-item-logo.contacts-items-item-logo-call {
+	background: url("../img/contacts/труба.png") center center scroll no-repeat;
+}
+
+.contacts-items-item-text {
+	font-family: "Calibri", "Arial", sans-serif;
+	letter-spacing: calc(-60em / 1000); /* ! */
+	font-size: 16.67px;
+}
+
+.contacts h5 {
+	font-family: "Franklin Gothic Medium", "Arial", sans-serif;
+	letter-spacing: calc(-60em / 1000); /* ! */
+	font-size: 20.83px;
+	text-transform: uppercase;
+	margin-bottom: 46px;
+}
+
+.contact-form {
+	max-width: 735px;
+	margin: 0 auto 30px;
+}
+.contact-form input {
+	display: inline-block;
+	flex-grow: 1;
+}
+
+.contact-form input#contact-name {
+	margin-right: 28px;
+}
+
+.name-email {
+	margin-bottom: 15px;
+	display: flex;
+	justify-content: space-between;
+}
+.contact-form .name-email,
+.contact-form textarea {
+	width: 100%;
+}
+.contact-form input,
+.contact-form textarea {
+	padding: 9px 12px 13px 12px;
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+.contacts input[type="submit"] {
+	height: 58px;
+	text-align: center;
+	border: 3px solid #fff;
+	background: none;
+	border-radius: 5px;
+	color: #fff;
+	font-family: "Franklin Gothic Medium", "Arial", sans-serif;
+	letter-spacing: calc(-60em / 1000); /* ! */
+	font-size: 20.83px;
+	padding: 15px 18px 13px 17px;
+	margin-bottom: 75px;
+}
+
+.soc-net-btns {
+	max-width: 435px;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
+.soc-net-btns-item {
+	height: 36px;
+	width:  36px;
+}
+.fb-ico {
+	background: url("../img/contacts/фб.png") center center scroll no-repeat;
+}
+.tw-ico {
+	background: url("../img/contacts/твитер.png") center center scroll no-repeat;
+}
+.wl-ico {
+	background: url("../img/contacts/мяч.png") center center scroll no-repeat;
+}
+.gh-ico {
+	background: url("../img/contacts/киса.png") center center scroll no-repeat;
+}
+.ig-ico {
+	background: url("../img/contacts/инст.png") center center scroll no-repeat;
+}
+.in-ico {
+	background: url("../img/contacts/ин.png") center center scroll no-repeat;
+}
+
+footer {
+	background-color: #354051;
+	text-align: center;
+}
+footer p {
+	display: inline-block;
+	font-family: "Arial", sans-serif;
+	letter-spacing: calc(-60em / 1000); /* ! */
+	font-size: 13.27px;
+	color: #fff;
+	margin: 41px auto;
+}
