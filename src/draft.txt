@@ -1,0 +1,83 @@
+СТИЛИ 
+
+/*div.box>a
+a:active
+a:visited
+a:hover
+input:focus {
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.8);
+}
+li:first-child
+li:nth-child(even)
+li:nth-child(odd)
+li:nth-child(2n)
+li:nth-child(2n+1)
+lorem30
+p::first-line
+p::first-letter
+ul {
+	margin: 50px;
+	font-size: 18px;
+}
+li::before {
+	content: "";
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background-color: #f00;
+	border-radius: 50%;
+	margin-right: 10px;
+	transform: scale(0);
+	transition: all 0.3s;
+}
+li::after {
+	content: "";
+}
+li:hover::before {
+	transform: scale(1);
+}
+
+An example of animation
+.box {
+	background-color: azure;
+	transition-duration: 0.5s;
+	transition-property: all; // анимировать все свойства
+	transition-property: width, background-color; // анимировать только определённое свойство
+	transition-delay: 2s;
+	transition-timing-function: linear | ease | ease-in | ease-out | ease-in-out ;
+	// cubic-bezier!!!
+}
+.box:hover {
+	background-color: red;
+}
+
+
+CSS3
+.box {
+	width: 200px;
+	height: 200px;
+	border: 2px solid black;
+	background-color: azure;
+	animation-name: move;
+	animation-duration: 2s;
+	animation-timing-function: ease;
+	animation-delay: 2s;
+	animation-iteration-count: infinite | 3 (or any other number);
+}
+@keyframes move {
+	from {
+		background: red;
+	}
+	to {
+		background: black;
+	}
+}
+
+@keyframes move1 {
+	0% {
+		background: red;
+	}
+	100% {
+		background: black;
+	}
+}

@@ -7,70 +7,82 @@
 	<meta name="robots" content="all">
 	<meta property="og:title" content="This is my test page...">
 	<title>Андрей Браун — Веб-разработчик</title>
+	
+	
+	<!-- <link rel="stylesheet" href="css/bootstrap-css/bootstrap.min.css"> -->
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	
+	<link rel="stylesheet" href="css/animate.min.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
 
 </head>
 <body>
+	<!-- This div.loader will be removed when the DOM will be ready -->
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
+
 	<header>
 		<nav>
-			<div class="logo">Андрей Браун</div>
+			<div class="logo"><a href="#">Андрей Браун</a></div>
 			<div class="menu"><ul>
-				<li>Обо мне</li>
-				<li>Услуги</li>
-				<li>Кейсы</li>
-				<li>Прайс</li>
-				<li>Отзывы</li>
-				<li>Контакты</li>
+				<li><a href="#about">Обо мне</a></li>
+				<li><a href="#abilities">Услуги</a></li>
+				<li><a href="#cases">Кейсы</a></li>
+				<li><a href="#price">Прайс</a></li>
+				<li><a href="#feedback">Отзывы</a></li>
+				<li><a href="#contacts">Контакты</a></li>
 			</ul></div>
 		</nav>
 	</header>
 
-	<div class="main"><div class="title-container">
+	<main id="main"><div class="veil"><div class="title-container">
 		<h1>Привет <br> Я Андрей Браун</h1>
 		<h4>Фулл стэк веб-разработчик</h4>
-		<input type="submit" value="Обо мне">
-		<input type="submit" value="Мои работы">
-	</div></div>
+		<input type="button" value="Обо мне">
+		<input type="button" value="Мои работы">
+	</div></div></main>
 
-	<div class="about"><div class="section-container">
-		<h2 class="section-title">Обо мне</h2>
+	<section class="about" id="about"><div class="section-container">
+		<h2 class="section-title animate__fadeInUp">Обо мне</h2>
 		<div class="h2-line"></div>
 		<img src="img/about/face_round_sm.png" alt="">
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
 		<br><br>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-		<input type="submit" value="Скачать резюме">
-	</div></div>
+		<a href="#" class="btn-download-resume"> Скачать резюме</a>
+	</div></section>
 
-	<div class="abilities"><div class="section-container">
+	<section class="abilities" id="abilities"><div class="section-container">
 		<h2 class="section-title">Что я умею</h2>
 		<div class="h2-line"></div>
 		<div class="skills">
 			<div class="skill-item">
-				<div class="skill-item-logo skill-item-logo-web-design"></div>
+				<div class="skill-item-logo skill-item-logo-web-design" data-effect="animate__flipInX"></div>
 				<div class="skill-item-title">Веб-дизайн</div>
 				<div class="skill-item-description">Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam. </div>
 			</div>
 			<div class="skill-item">
-				<div class="skill-item-logo skill-item-logo-development"></div>
+				<div class="skill-item-logo skill-item-logo-development" data-effect="animate__jackInTheBox"></div>
 				<div class="skill-item-title">Разработка</div>
 				<div class="skill-item-description">Lorem ipsum dolor sit amet placerat facilisis mi in tempus eleifend pellentesque.</div>
 			</div>
 			<div class="skill-item">
-				<div class="skill-item-logo skill-item-logo-seo"></div>
+				<div class="skill-item-logo skill-item-logo-seo" data-effect="animate__zoomIn"></div>
 				<div class="skill-item-title">СЕО-Оптимизация</div>
 				<div class="skill-item-description">Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</div>
 			</div>
 			<div class="skill-item">
-				<div class="skill-item-logo skill-item-logo-marketing"></div>
+				<div class="skill-item-logo skill-item-logo-marketing" data-effect="animate__slideInDown"></div>
 				<div class="skill-item-title">Маркетинг</div>
 				<div class="skill-item-description">Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque .</div>
 			</div>
 		</div>
-	</div></div>	
+	</div></section>	
 	
-	<div class="cases"><div class="section-container">
+	<section class="cases" id="cases"><div class="section-container">
 		<h2>Кейсы</h2>
 		<div class="h2-line"></div>
 		<p class="p-cases-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed Dapibus leo nec ornare diamcoccodo nibh ante facilisis.</p>
@@ -91,30 +103,35 @@
 			</div>
 		</div>
 
-		<input type="submit" value="Visit live site">
+		<div class="btn-visit-live-site-wrapper"><a href="#" class="btn-visit-live-site">Visit live site</a></div>
 	</div>
-	</div>
+	</section>
 
-	<div class="price"><div class="section-container">
+	<section class="price" id="price"><div class="section-container">
 		<div class="price-flex-container">
-			<h2>Расчет стоимости</h2>
+			<h2>Расчёт стоимости</h2>
 			<h5>Тип сайта</h5>
 			<select name="sometext" id="sl-site-type">
 				<option value="" disabled selected>Выберите пункт...</option>
-				<option value="text1">Пункт&nbsp;1</option>
-				<option value="text2">Пункт&nbsp;2</option>
+				<option value="landing">Одностраничник</option>
+				<option value="blog">Сетедневник (блог)</option>
+				<option value="forum">Обсудница (форум)</option>
+				<option value="internet-shop">Межсетевая лавка (интернет-магазин)</option>
+				<option value="many-purposes-site">Многоцелевой страничник (лавка+сетедневник, или иное сочетание)</option>
 			</select>
 			<h5>Дизайн</h5>
 			<select name="sometext" id="sl-design">
 				<option value="" disabled selected>Выберите пункт...</option>
-				<option value="text1">Пункт&nbsp;1</option>
-				<option value="text2">Пункт&nbsp;2</option>
+				<option value="opt-author_s">Творцевой (авторский)</option>
+				<option value="opt-available">Выбор из доступных</option>
+				<option value="opt-personal">Свой избор</option>
 			</select>
 			<h5>Адаптивность</h5>
 			<select name="sometext" id="sl-adaptivity">
 				<option value="" disabled selected>Выберите пункт...</option>
-				<option value="text1">Пункт&nbsp;1</option>
-				<option value="text2">Пункт&nbsp;2</option>
+				<option value="pixel-perfect">Точь-в-точь-вёрстка (Неадаптивно, пиксель-пёрфект)</option>
+				<option value="rubber">Резиновая вёрстка</option>
+				<option value="adaptive">Адаптивная вёрстка</option>
 			</select>
 		</div>
 
@@ -130,9 +147,9 @@
 			</div>
 		</div>
 
-	</div></div>
+	</div></section>
 
-	<div class="statistics"><div class="section-container">
+	<section class="statistics" id="statistics"><div class="section-container">
 		<h2>Немного статистики</h2>
 		<div class="h2-line"></div>
 		<div class="statistics-items">
@@ -157,9 +174,9 @@
 				<div class="statistics-items-item-text">Наград получено</div>
 			</div>
 		</div>
-	</div></div>
+	</div></section>
 
-	<div class="feedback"><div class="section-container">
+	<section class="feedback" id="feedback"><div class="section-container">
 		<h2>Отзывы</h2>
 		<div class="h2-line"></div>
 		<img src="img/feedback/feedback_face.png" alt="">
@@ -169,9 +186,9 @@
 		<div class="three-dots">
 			<span class="dot-selected">.</span>..
 		</div>
-	</div></div>
+	</div></section>
 
-	<div class="contacts"><div class="section-container">
+	<section class="contacts" id="contacts"><div class="section-container">
 		<h2>Мои контакты</h2>
 		<div class="h2-line"></div>
 
@@ -195,29 +212,31 @@
 
 		<h5>Оставьте мне сообщение</h5>
 		
-		<div class="contact-form">
-			<div class="name-email">
-				<input type="text" name="name" id="contact-name" placeholder="Имя"/>
-				<input type="text" name="email" id="contact-email" placeholder="Email" required/> <!-- Оно обязательно, ибо нужно же нам знать адрес отправителя письма -->
+		<form class="contact-form" action="#">
+			<div class="contact-form-data">
+				<div class="name-email">
+					<input type="text" name="name" id="contact-name" placeholder="Имя"/>
+					<input type="email" name="email" id="contact-email" placeholder="Email" required/> <!-- Оно обязательно, ибо нужно же нам знать адрес отправителя письма -->
+				</div>
+				<textarea name="message" id="contacts-msg" cols="30" rows="10" placeholder="Сообщение"></textarea>
 			</div>
-			<textarea name="message" id="contacts-msg" cols="30" rows="10" placeholder="Сообщение"></textarea>
-		</div>
 
-		<input type="submit" value="Отправить">
+			<input type="submit" value="Отправить">
+		</form>
 
 		<div class="soc-net-btns">
-			<div class="soc-net-btns-item fb-ico"></div>
-			<div class="soc-net-btns-item tw-ico"></div>
-			<div class="soc-net-btns-item wl-ico"></div>
-			<div class="soc-net-btns-item gh-ico"></div>
-			<div class="soc-net-btns-item ig-ico"></div>
-			<div class="soc-net-btns-item in-ico"></div>
+			<a href="https://www.facebook.com" target="_blank"><div class="soc-net-btns-item fb-ico"></div></a>
+			<a href="https://twitter.com" target="_blank"><div class="soc-net-btns-item tw-ico"></div></a>
+			<a href="https://www.google.ru/" target="_blank"><div class="soc-net-btns-item wl-ico"></div></a>
+			<a href="https://github.com" target="_blank"><div class="soc-net-btns-item gh-ico"></div></a>
+			<a href="https://instagram.com" target="_blank"><div class="soc-net-btns-item ig-ico"></div></a>
+			<a href="https://www.linkedin.com" target="_blank"><div class="soc-net-btns-item in-ico"></div></a>
 		</div>
-	</div></div>
+	</div></section>
 
-	<div class="map">
+	<section class="map">
 		
-	</div>
+	</section>
 
 	<footer>
 		<p>Copyright © 2021 Андрей Браун. Design by Web</p>
