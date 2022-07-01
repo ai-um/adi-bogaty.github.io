@@ -9,8 +9,8 @@
 	<title>Андрей Браун — Веб-разработчик</title>
 	
 	
-	<!-- <link rel="stylesheet" href="css/bootstrap-css/bootstrap.min.css"> -->
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/bootstrap-css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	
 	<link rel="stylesheet" href="css/animate.min.css">
@@ -26,24 +26,56 @@
 
 	<header>
 		<nav>
-			<div class="logo"><a href="#">Андрей Браун</a></div>
-			<div class="menu"><ul>
-				<li><a href="#about">Обо мне</a></li>
-				<li><a href="#abilities">Услуги</a></li>
-				<li><a href="#cases">Кейсы</a></li>
-				<li><a href="#price">Прайс</a></li>
-				<li><a href="#feedback">Отзывы</a></li>
-				<li><a href="#contacts">Контакты</a></li>
-			</ul></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-xxl-2 col-xl-3 col-lg-3 col-7"><div class="logo"><a href="#">Андрей Браун</a></div></div>
+					<div class="px-0 col-xxl-8 col-xl-8 col-lg-9 offset-xxl-2 offset-xl-1 d-none d-lg-block">
+						<div class="menu"><ul>
+							<li><a href="#about">Обо мне</a></li>
+							<li><a href="#abilities">Услуги</a></li>
+							<li><a href="#cases">Кейсы</a></li>
+							<li><a href="#price">Прайс</a></li>
+							<li><a href="#feedback">Отзывы</a></li>
+							<li><a href="#contacts">Контакты</a></li>
+						</ul></div>
+					</div>
+					<div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">						
+						<div class="dropdown">
+						  <a class="btn btn-outline-secondary dropdown-toggle white-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+						    Навигация
+						  </a>
+						  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+						    <li><a class="dropdown-item" href="#about">Обо мне</a></li>
+							<li><a class="dropdown-item" href="#abilities">Услуги</a></li>
+							<li><a class="dropdown-item" href="#cases">Кейсы</a></li>
+							<li><a class="dropdown-item" href="#price">Прайс</a></li>
+							<li><a class="dropdown-item" href="#feedback">Отзывы</a></li>
+							<li><a class="dropdown-item" href="#contacts">Контакты</a></li>
+						  </ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
 		</nav>
 	</header>
 
-	<main id="main"><div class="veil"><div class="title-container">
-		<h1>Привет <br> Я Андрей Браун</h1>
-		<h4>Фулл стэк веб-разработчик</h4>
-		<input type="button" value="Обо мне">
-		<input type="button" value="Мои работы">
-	</div></div></main>
+	<main id="main"><div class="veil">
+		<div class="container h-100">
+			<div class="row align-items-center h-100">
+				<div class="col-lg-6 mt-5 pt-5">
+					<div class="title-container mt-5">
+						<h1>Привет <br> Я Андрей Браун</h1>
+						<h4>Фулл стэк веб-разработчик</h4>
+						<input type="button" value="Обо мне">
+						<input type="button" value="Мои работы">
+					</div>
+				</div>
+			</div>
+		</div>
+			
+	</div></main>
 
 	<section class="about" id="about"><div class="section-container">
 		<h2 class="section-title animate__fadeInUp">Обо мне</h2>
@@ -242,5 +274,6 @@
 		<p>Copyright © 2021 Андрей Браун. Design by Web</p>
 	</footer>
 	
+	<script type="text/javascript" src="js/bootstrap-js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
