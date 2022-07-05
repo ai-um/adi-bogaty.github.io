@@ -229,7 +229,7 @@ main {
   animation: animate 1.5s linear infinite;
   clip: rect(0, 80px, 80px, 40px);
   height: 80px;
-  width: 80px;
+  width: 80px; /*Чёткая ширина — неадаптивно*/
   position: absolute;
   left: calc(50% - 40px);
   top: calc(50% - 40px);
@@ -248,7 +248,7 @@ main {
   content:'';
   border-radius: 50%;
   height: 80px;
-  width: 80px;
+  width: 80px; /*Чёткая ширина — неадаптивно*/
   position: absolute;
 }
 @keyframes animate2 {
@@ -276,7 +276,7 @@ h2 {
 }
 .h2-line {
 	margin:0 auto 60px;
-	width: 70px;
+	width: 70px; /*Чёткая ширина — неадаптивно*/
 	height: 4px;
 	background-color: #d17700;
 }
@@ -361,11 +361,11 @@ a.btn-download-resume:active {
 }
 
 .skill-item {
-	width: 214px;
+	width: 214px; /*Чёткая ширина — неадаптивно*/
 	text-align: center;
 }
 .skill-item-logo {
-	width: 55px;
+	width: 55px; /*Чёткая ширина — неадаптивно*/
 	height: 55px;
 	margin: 0 auto 35px auto;
 }
@@ -530,7 +530,7 @@ a.btn-visit-live-site:active {
 .price hr {
 	border-top: 2px solid #d1d1d1;
 	margin: 0 auto;
-	width: 891px;
+	max-width: 891px;
 }
 
 .undertable {
@@ -569,12 +569,12 @@ a.btn-visit-live-site:active {
 }
 
 .statistics-items-item {
-	width: 214px;
+	width: 214px; /*Чёткая ширина — неадаптивно*/
 	text-align: center;
 	margin-bottom: 30px;
 }
 .statistics-items-item-logo {
-	width: 55px;
+	width: 55px; /*Чёткая ширина — неадаптивно*/
 	height: 55px;
 	margin: 0 auto 35px auto;
 }
@@ -626,16 +626,20 @@ a.btn-visit-live-site:active {
 	margin-bottom: 35px;
 }
 
-.three-dots {
-	margin-top: 13px;
-	font-family: "Times New Roman";
-	font-size: 95px;
-	line-height: 15px;
-	color: #cfd2d7;
+.carousel {
+	padding-bottom: 51px;
 }
-.dot-selected {
-	color: #c96500;
+.carousel-indicators [data-bs-target] {
+  border-radius: 50%;
+  background-color: #cfd2d7; /*inactive*/
+  width:  12px;
+  height: 12px;
+  margin: 0 7px;
 }
+.carousel-indicators .active {
+  background-color: #c96500; /*active*/
+}
+
 /*_______FEEDBACK____End__________________________*/
 /*_______CONTACTS____Begin________________________*/
 .contacts {
@@ -668,12 +672,12 @@ a.btn-visit-live-site:active {
 	margin: 0 auto 20px;
 }
 .contacts-items-item {
-	width: 165px;
+	width: 165px; /*Чёткая ширина — неадаптивно*/
 	text-align: center;
 	margin-bottom: 20px;
 }
 .contacts-items-item-logo {
-	width: 40px;
+	width: 40px; /*Чёткая ширина — неадаптивно*/
 	height: 30px;
 	margin: 0 auto 17px auto;
 }
@@ -723,7 +727,7 @@ a.btn-visit-live-site:active {
 }
 .contact-form .name-email,
 .contact-form textarea {
-	width: 100%;
+	width: 100%; /* (—_—) */
 }
 .contact-form input,
 .contact-form textarea {
@@ -773,7 +777,7 @@ a.btn-visit-live-site:active {
 
 .soc-net-btns-item {
 	height: 36px;
-	width:  36px;
+	width:  36px; /*Чёткая ширина — неадаптивно*/
 
 	transition: all 0.4s ease;
 }
@@ -802,7 +806,9 @@ a.btn-visit-live-site:active {
 	background: url("../img/contacts/ин.png") center center scroll no-repeat;
 }
 /*_______CONTACTS____End__________________________*/
-
+.map {
+	height: 355px; /*It must correspond to the height of iframe map.*/
+}
 /*_______FOOTER______Begin________________________*/
 footer {
 	background-color: #354051;
@@ -819,6 +825,10 @@ footer p {
 /*_______FOOTER______End__________________________*/
 /*_______ADAPTIVITY__Begin________________________*/
 @media (max-width: 1212px) {
+	.title-container {
+		width: fit-content;
+		padding: 0 !important;
+	}
 	.section-container {
 		padding: 0 20px;
 	}
@@ -835,7 +845,7 @@ footer p {
 		display: flex;
 		align-items: center;
 		max-width: 100%;
-		width: 100%;
+		width: 100%; /* (—_—) */
 		align-content: center;
 	}
 	.cases-left-text h6 {
@@ -864,6 +874,12 @@ footer p {
 	.title-container h4,
 	.title-container input {
 		color: #344051;
+	}
+}
+@media (max-width: 700px) {
+	.cases-left-text,
+	.cases-right-text {
+		flex-direction: column;
 	}
 }
 @media (max-width: 468px) {
