@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="Eto moja perwaja stranica width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="robots" content="all">
 	<meta property="og:title" content="This is my test page...">
 	<title>Андрей Браун — Веб-разработчик</title>
@@ -23,6 +23,62 @@
 	<div class="loader">
 		<div class="loader_inner"></div>
 	</div>
+	
+	<div class="modal js-modal js-modal-overlay is-show" data-modal="delivery">
+		<svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+	   
+		
+
+
+		<section class="price" id="modal-price"><div class="section-container">
+			<div class="price-flex-container">
+
+				<h5 class="modal-title">Здравствуйте!</h5>
+				<p class="modal-text">Выберите какой сайт вы хотите, чтобы узнать цену и сроки создания сайта.</p>
+
+				<h5>Тип сайта</h5>
+				<select name="sometext" id="modal-sl-site-type">
+					<option value="" disabled selected>Выберите пункт...</option>
+					<option value="landing">Одностраничник</option>
+					<option value="blog">Сетедневник (блог)</option>
+					<option value="forum">Обсудница (форум)</option>
+					<option value="internet-shop">Межсетевая лавка (интернет-магазин)</option>
+					<option value="many-purposes-site">Многоцелевой страничник (лавка+сетедневник, или иное сочетание)</option>
+				</select>
+				<h5>Дизайн</h5>
+				<select name="sometext" id="modal-sl-design">
+					<option value="" disabled selected>Выберите пункт...</option>
+					<option value="opt-author_s">Творцевой (авторский)</option>
+					<option value="opt-available">Выбор из доступных</option>
+					<option value="opt-personal">Свой избор</option>
+				</select>
+				<h5>Адаптивность</h5>
+				<select name="sometext" id="modal-sl-adaptivity">
+					<option value="" disabled selected>Выберите пункт...</option>
+					<option value="pixel-perfect">Точь-в-точь-вёрстка (Неадаптивно, пиксель-пёрфект)</option>
+					<option value="rubber">Резиновая вёрстка</option>
+					<option value="adaptive">Адаптивная вёрстка</option>
+				</select>
+			</div>
+
+			<hr>
+			<div class="price-bottom-flex-container">
+				<div class="undertable">
+					<span class="undertable-inner-item-text">Сроки</span>
+					<span class="undertable-inner-item-number" id="modal-count-time">0</span>
+				</div>
+				<div class="undertable">
+					<span class="undertable-inner-item-text">Стоимость</span>
+					<span class="undertable-inner-item-number" id="modal-count-price">0</span>
+				</div>
+			</div>
+
+		</div></section>
+
+
+
+	</div>
+
 
 	<header>
 		<nav>
@@ -174,11 +230,11 @@
 		<div class="price-bottom-flex-container">
 			<div class="undertable">
 				<span class="undertable-inner-item-text">Сроки</span>
-				<span class="undertable-inner-item-number">0</span>
+				<span class="undertable-inner-item-number" id="count-time">0</span>
 			</div>
 			<div class="undertable">
 				<span class="undertable-inner-item-text">Стоимость</span>
-				<span class="undertable-inner-item-number">0</span>
+				<span class="undertable-inner-item-number" id="count-price">0</span>
 			</div>
 		</div>
 
