@@ -12,11 +12,9 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/bootstrap-css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
-	
-	<link rel="stylesheet" href="css/animate.min.css">
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-	<script src="js/main.js"></script>
 
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
 </head>
 <body>
 	<!-- This div.loader will be removed when the DOM will be ready -->
@@ -24,7 +22,7 @@
 		<div class="loader_inner"></div>
 	</div>
 	
-	<div class="modal js-modal js-modal-overlay is-show" data-modal="delivery">
+	<div class="modal js-modal js-modal-overlay is-show" data-modal="delivery" id="modal-price-calc">
 		<svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
 	   
 		
@@ -81,10 +79,10 @@
 
 
 	<header>
-		<nav>
+		<nav class="nav-cap-menu">
 			<div class="container">
 				<div class="row">
-					<div class="col-xxl-2 col-xl-3 col-lg-3 col-7"><div class="logo"><a href="#">Андрей Браун</a></div></div>
+					<div class="col-xxl-2 col-xl-3 col-lg-3 col-7"><div class="logo"><a href="#" class="menu-active">Андрей Браун</a></div></div>
 					<div class="px-0 col-xxl-8 col-xl-8 col-lg-9 offset-xxl-2 offset-xl-1 d-none d-lg-block">
 						<div class="menu"><ul>
 							<li><a href="#about">Обо мне</a></li>
@@ -136,10 +134,11 @@
 		</div>
 	</main>
 
+
 	<section class="about" id="about"><div class="section-container">
 		<h2 class="section-title animate__fadeInUp">Обо мне</h2>
 		<div class="h2-line"></div>
-		<img src="img/about/face_round_sm.png" alt="">
+		<img src="#" data-src="img/about/face_round_sm.png" alt="">
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
 		<br><br>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
@@ -177,24 +176,98 @@
 		<h2>Кейсы</h2>
 		<div class="h2-line"></div>
 		<p class="p-cases-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed Dapibus leo nec ornare diamcoccodo nibh ante facilisis.</p>
-		<img src="img/cases/cases_bg.jpg" alt="">
-		
-		<div class="cases-flex-container">
-			<div class="cases-left-text">
-				<h6>Client</h6>
-				<p class="cases-little-text">Какая-то компания</p>
-				<h6 class="cases-left-text-h6-2">Website</h6>
-				<p class="cases-little-text">http://www.somedomain.com</p>
 
+
+
+
+		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
 			</div>
-			
-			<div class="cases-right-text">
-				<div class="cases-right-text-title">Название проекта</div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img class="d-block w-100 image-link" src="#" data-src="img/cases/cases_bg.jpg" href="img/cases/cases_bg.jpg" alt="...">
+
+					<div class="cases-flex-container">
+						<div class="cases-left-text">
+							<h6>Client</h6>
+							<p class="cases-little-text">Какая-то компания</p>
+							<h6 class="cases-left-text-h6-2">Website</h6>
+							<p class="cases-little-text">http://www.somedomain.com</p>
+
+						</div>
+						
+						<div class="cases-right-text">
+							<div class="cases-right-text-title">Название проекта</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						</div>
+					</div>
+
+					<div class="btn-visit-live-site-wrapper"><a href="#" class="btn-visit-live-site">Visit live site</a></div>
+
+					<!-- <div class="carousel-caption d-none d-md-block">
+						<h5>First slide label</h5>
+						<p>Some representative placeholder content for the first slide.</p>
+					</div> -->
+				</div>
+
+				<div class="carousel-item">
+					<img class="d-block w-100 image-link" src="#" data-src="img/cases/case_2.jpg" href="img/cases/case_2.jpg" alt="...">
+
+					<div class="cases-flex-container">
+						<div class="cases-left-text">
+							<h6>Client2</h6>
+							<p class="cases-little-text">Какая-то компания2</p>
+							<h6 class="cases-left-text-h6-2">Website2</h6>
+							<p class="cases-little-text">http://www.somedomain2.com</p>
+
+						</div>
+						
+						<div class="cases-right-text">
+							<div class="cases-right-text-title">Название проекта2</div>
+							<p>Lorem2 ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						</div>
+					</div>
+
+					<div class="btn-visit-live-site-wrapper"><a href="#" class="btn-visit-live-site">Visit live site 2</a></div>
+				</div>
+
+				<div class="carousel-item">
+					<img class="d-block w-100 image-link" src="#" data-src="img/cases/case_3.jpg" href="img/cases/case_3.jpg" alt="...">
+
+					<div class="cases-flex-container">
+						<div class="cases-left-text">
+							<h6>Client3</h6>
+							<p class="cases-little-text">Какая-то компания3</p>
+							<h6 class="cases-left-text-h6-2">Website3</h6>
+							<p class="cases-little-text">http://www.somedomain3.com</p>
+
+						</div>
+						
+						<div class="cases-right-text">
+							<div class="cases-right-text-title">Название проекта3</div>
+							<p>Lorem3 ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						</div>
+					</div>
+
+					<div class="btn-visit-live-site-wrapper"><a href="#" class="btn-visit-live-site">Visit live site 3</a></div>
+				</div>
 			</div>
+
+		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Назад</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Вперёд</span>
+		  </button>
 		</div>
 
-		<div class="btn-visit-live-site-wrapper"><a href="#" class="btn-visit-live-site">Visit live site</a></div>
+		
 	</div>
 	</section>
 
@@ -251,7 +324,7 @@
 			</div>
 			<div class="statistics-items-item">
 				<div class="statistics-items-item-logo tag-brackets-logo"></div>
-				<div class="statistics-items-item-title">4,600</div>
+				<div class="statistics-items-item-title">4600</div>
 				<div class="statistics-items-item-text">часов работы</div>
 			</div>
 			<div class="statistics-items-item">
@@ -279,17 +352,17 @@
 		  </div>
 		  <div class="carousel-inner">
 		    <div class="carousel-item active">
-				<img src="img/feedback/feedback_face.png" alt="">
+				<img src="#" data-src="img/feedback/feedback_face.png" alt="">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</p>
 				<p><strong>Михаил</strong>, Ген директор ПАО “Газпром”.</p>
 		    </div>
 		    <div class="carousel-item">
-		    	<img src="img/feedback/feedback_face1.png" alt="">
+		    	<img src="#" data-src="img/feedback/feedback_face1.png" alt="">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</p>
 				<p><strong>Владимир</strong>, Глава ООО “Русторга”.</p>
 		    </div>
 		    <div class="carousel-item">
-		    	<img src="img/feedback/feedback_face2.png" alt="">
+		    	<img src="#" data-src="img/feedback/feedback_face2.png" alt="">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</p>
 				<p><strong>Светлана</strong>, Руководительница ПТ “Миросвет”.</p>
 		    </div>
@@ -352,13 +425,39 @@
 	</div></section>
 
 	<section class="map">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46704.9692041411!2d-71.71647856437197!3d42.976997604323365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e233e8a9946e0d%3A0x590e6c13b1743f65!2z0J3RjNGOINCR0L7RgdGC0L7QvSwg0J3RjNGOLdCl0Y3QvNC_0YjQuNGAIDAzMDcwLCDQodCo0JA!5e0!3m2!1sru!2sru!4v1657015660000!5m2!1sru!2sru" width="100%" height="355" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		<iframe src="#" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46704.9692041411!2d-71.71647856437197!3d42.976997604323365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e233e8a9946e0d%3A0x590e6c13b1743f65!2z0J3RjNGOINCR0L7RgdGC0L7QvSwg0J3RjNGOLdCl0Y3QvNC_0YjQuNGAIDAzMDcwLCDQodCo0JA!5e0!3m2!1sru!2sru!4v1657015660000!5m2!1sru!2sru" width="100%" height="355" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 	</section>
 
 	<footer>
 		<p>Copyright © 2021 Андрей Браун. Design by Web</p>
 	</footer>
-	
+
+
+
+	<div class="modal js-modal js-modal-overlay" data-modal="delivery" id="modal-unexpected">
+		<svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+
+		<div class="unexpected" id="modal-unexpected"><div class="section-container">
+			<div class="unexpected-flex-container">
+
+				<h5 class="modal-title">Будьте здоровы!</h5>
+				<p class="modal-text">Ещё не определились с выбором сайта? Мы подскажем. Позвоните нам на номер <b>+7 987 654 32 10</b></p>
+
+				<img src="img/анекдот.jpg" data-src="img/анекдот.jpg" alt="..." width="60%">
+
+			</div>
+
+		</div></div>
+
+
+
+	</div>
+
+
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/bootstrap-js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>

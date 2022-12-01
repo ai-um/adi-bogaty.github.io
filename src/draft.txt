@@ -81,3 +81,64 @@ CSS3
 		background: black;
 	}
 }
+
+
+
+BOM (Browser Object Model)
+
+let windowWidth = navigator.userAgent; // получить данные о клиенте (ОС, браузер и др.)
+console.log(windowWidth);
+let windowWidth = navigator.location.href;
+history.back();
+
+
+
+JS - JQuery
+
+
+// $('.container').find("#hello").css("border", '2px solid red');
+// $('.weight').dblclick(function(event) {
+// 	$(this).toggleClass('red');
+// });
+
+// Отступ при скролле
+// $('a[href^="#"}').click(function(){
+// 	let valHref = $(this).attr("href");
+// 	$('html, body').animate({
+// 		scrollTop: $(valHref).offset().top - 20 + "px"});
+// });
+
+// $('.row:has(.col)').css('border', '2px solid red');
+// $('.price:parent').css('border', '2px solid red'); // проверка есть ли в .price элементе какие-то другие элементы (является ли .price-элемент родителем для кого-то; то есть не пустой ли он)
+
+
+MODAL Bootstrap
+
+	<!-- Button trigger modal -->
+	<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+	  Launch demo modal
+	</button>
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	        ...
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Save changes</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+// 37:26 Слайдеры
+
+1. Таймер с модальным окном. В окне форму обратного звонка, либо текст с заманухой.

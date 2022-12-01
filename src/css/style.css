@@ -1,4 +1,4 @@
-/* ТОЛЬКО НА 67% выглядит как надо */
+ ТОЛЬКО НА 67% выглядит как надо */
 
 /*https://www.font2web.com has been used for converting one font to different extensions*/
 @font-face {
@@ -12,10 +12,9 @@
 /*_______HEAD___Begin________________________*/
 html {
 	overflow-x: hidden;
-	/*this (beneath) is being got off after closing of modal window*/
-	overflow-y: hidden;  
 	scroll-behavior: smooth;
 }
+/*:target { scroll-margin-top: 20px; }; отступ при прокрутке к элементу по нажатии на внутреннюю ссылку*/
 body {
 	font-family: Arial, sans-serif;
 }
@@ -105,7 +104,9 @@ nav {
 .menu li a:visited {
 	color: #fff;
 }
-.menu li a:hover {
+.menu li a:hover,
+.menu li a.menu-active,
+.logo a.menu-active {
 	color: #e88604;
 }
 .menu li a:active {
@@ -392,6 +393,9 @@ a.btn-download-resume:active {
 	color: #cf7600;
 	font-weight: 600;
 	margin-bottom: 15px;
+}
+.skills-animation {
+	/**/
 }
 /*_______ABILITIES___End__________________________*/
 /*_______CASES_______Begin________________________*/
@@ -954,3 +958,9 @@ p.modal-text {
    display: none;
 }
 /*_______MODAL_WNDW__End__________________________*/
+.image-link { cursor: pointer; }
+
+#modal-unexpected h5 {
+	font-size: 2.25rem;
+	font-weight: bolder;
+}
